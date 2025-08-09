@@ -1,69 +1,125 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Fuentes-->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>El Cántaro Limpieza | Pagina oficial</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  
+   <!--Fuentes-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Darumadrop+One&family=Iansui&family=Karla:ital,wght@0,200..800;1,200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Ponomar&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&family=Special+Gothic+Expanded+One&family=Triodion&display=swap" rel="stylesheet">
     
-    <link rel="stylesheet" href="./css/style.css">
-    <title>El cantero | Trapos y paños</title>
-
-   
-
 </head>
 <body>
- <div class="container-grid">
 
-    <header class="frente">
-     <div class="container-frente">
-      <img src="./assets/logoriginal.png" class="logo">
-      <span class="menu-icon"><img src="/assets/menuicon.png"></span>
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-content">
+      <a href="#front"><img src="./assets/logoriginal.png" alt="El Cántaro" class="logo" /></a>
       <nav>
-        <ul>
-            <li><a href="#">Catalogo</a></li>
-            <li><a href="#">Nosotros</a></li>
-            <li><a href="#">Clientes</a></li>
-            <li><a href="#">Contacto</a></li>
-        </ul>
+        <a href="#productoss">Catálogo</a>
+        <a href="#nosotross">Nosotros</a>
+        <a href="#contactoss">Contacto</a>
       </nav>
-      </div> 
-    </header>
-    
-    <main>
-      
-      <section class="frontprin">
-       <div class="containerprin">
-        <div class="titulo">
-        <div class="separartitulo">
-          <p>Somos</p><strong>El cantaro</strong></h2>
-        </div>
-        <h2>Limpieza</h2>
-        </div>
-        <div class="textodetitulo">
-        <p>Te ofrecemos trapos y paños seleccionados para uso profesional: resistentes, absorbentes y listos para el trabajo exigente de talleres, industrias y comercios.</p>
-        <p>Descubrí nuestros productos y sumá calidad a tu rutina.</p>
-        </div> 
+    </div>
+  </header>
+
+  <!-- front -->
+  <section class="front" id="front">
+    <div class="container front-content">
+       <div class="titulo">
+        <h1>Somos <strong>El Cántaro</strong><br>
+        <strong>Limpieza</strong>
+        </h1>
+        <p>Te ofrecemos trapos y paños seleccionados para uso profesional: resistentes, absorbentes y listos para el trabajo exigente de talleres, industrias y comercios.
+        <br><br>
+        Descubrí nuestros productos y sumá calidad a tu rutina.</p>
        </div>
-       <div class="imagenprin">
-         <img src="./assets/logoriginal.png">
-       </div>
-      </section>
+      <div class="logoprinc">
+        <img src="./assets/logoriginal.png" alt="Logo EC" class="front-logo">
+      </div>
+    </div>  
+  </section>
+
+  <div id="productoss"></div>
+  <!-- Catálogo -->
+ <section class="frontsecu">
+  <h2>Conoce nuestros <br>productos</h2>
+
+  <div class="catalogo-box">
+    <h3>Catálogo</h3> 
+  </div>
+
+  <div class="productos-imgs">
+    <div class="producto">
+      <img src="assets/trapo1.png" alt="Producto 1">
+    </div>
+    <div class="producto">
+      <img src="assets/trapo2.png" alt="Producto 2">
+    </div>
+    <div class="producto">
+      <img src="assets/trapo3.png" alt="Producto 3">
+    </div>
+  </div>
+
+  <p class="industria">100% Industria Argentina</p>
+</section>
+
+  
+  <!-- Nosotros -->
+  <div id="nosotross"></div> 
+  <section class="nosotros" id="nosotros">
+    <div class="container">
+      <h2>Sobre Nosotros</h2>
+      <p class="texto-nosotros">
+        En 2005, José Martín Vitale decidió emprender un proyecto propio con una idea simple pero potente: ofrecer productos de limpieza de calidad, especializados en trapos y paños industriales, un insumo esencial para talleres, fábricas y comercios.
+        <br><br>
+        Comenzó de manera familiar, con producción artesanal y distribución local, enfocándose en garantizar resistencia, absorción y durabilidad en cada trapo. La marca El Cántaro Limpieza nació con el compromiso de simplificar las tareas de limpieza profesional.
+        <br><br>
+        A lo largo de los años, la empresa fue creciendo en variedad y volumen, incorporando nuevos productos y mejorando los procesos de selección de telas. Su foco siempre estuvo en escuchar las necesidades de los clientes y mantener la calidad como sello distintivo.
+        <br><br>
+        Hoy, Elcántaro Limpieza se reconoce por su especialización en trapos y paños, convirtiéndose en un aliado confiable para industrias y comercios que buscan eficiencia y practicidad en sus tareas de limpieza..  
+      </p>
+      <img src="./assets/logoriginal.png" alt="EC Mini" class="ec-mini">
+    </div>
+  </section>
+
+ 
+  <!-- Clientes -->
+  <!--<section class="clientes" id="clientes">
+    <div class="container">
+      <h2>Clientes principales</h2>
+      <div class="logos-clientes">
+        <img src="img/cliente1.png" alt="Química Morón">
+        <img src="img/cliente2.png" alt="Cromax">
+      </div>
+    </div>
+  </section>-->
+  
+  
+  <div id="contactoss"></div> 
+  <!-- Contacto -->
+  <section class="contacto" >
+    <div class="container contacto-content">
+      <img src="./assets/logoriginal.png" alt="Logo EC" class="logo-contacto">
+      <div class="containercontact">
+       <h2>Contáctanos</h2>
+       <ul>
+         <li>📧 pablito93@gmail.com</li>
+         <li>📞 ‪+54 11 3362-5460‬</li>
+       </ul>
+      </div>
+    </div>
+    <h3>El Cantaro Limpiza</h3>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© Todos los derechos reservados</p>
+  </footer>
 
 
-      <section class="frontsecu">
-       
-      </section>
-
-
-    </main>
-    <footer>
-
-    </footer>
- </div>
-<script src="https://code.jquery.com/jquery-3.7.1.min.js" ></script>
-<script src="scripts.js"></script> 
 </body>
 </html>
