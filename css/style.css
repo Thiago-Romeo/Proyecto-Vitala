@@ -1,5 +1,11 @@
 /* Fuente principal */
 
+#productoss
+{
+  padding-top: 100px;
+  margin-top: -100px;
+}
+
 html
 {
   scroll-behavior: smooth;
@@ -89,7 +95,7 @@ nav a:hover
   margin-bottom: 20px;
   text-align: start;
   font-weight: 350;
-  font-size: 44px;
+  font-size: 60px;
 }
 
 .front p
@@ -98,13 +104,13 @@ nav a:hover
   min-width: 100%;
   text-align: start;
   line-height: 1.5rem;
-  font-size: 13px;
+  font-size: 17px;
 }
 
 .front-logo {
-  height: 13rem;
+  height: 16rem;
   min-width: 50%;
-  width: 307px;
+  width: 352px;
 }
 
 .titulo
@@ -253,13 +259,13 @@ nav a:hover
   
   text-align: center;
   background-color: #F3F3F3;
-  height: 100vh;
+  height: 86vh;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
 
-.containercomt
+.containercont
 {
   width: 500px;
   height: 464px;
@@ -315,13 +321,71 @@ nav a:hover
   
 }
 
-/* Footer */
-.footer {
-  background: #2b2b2b;
+
+/*otra forma contacto*/
+.listacontactos
+{
+  display: flex;
+  flex-direction: column;
+}
+
+.listacontactos p
+{
   color: #fff;
-  text-align: center;
-  padding: 20px;
-  font-size: 14px;
+  padding: 16px;
+  background-color: #000;
+  width: 291px;
+}
+
+/* Footer */
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #000;
+    padding: 21px 0px;
+}
+
+/* Logo y texto juntos */
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-logo img {
+    max-width: 50px;
+}
+
+.footer-logo p {
+    font-weight: bold;
+    color: #fff;
+    margin: 0;
+}
+
+/* Links */
+.footer-links {
+    list-style: none;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 15px 0;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-credit {
+    font-size: 0.9rem;
+    color: #bbb;
 }
 
 /* Responsive */
@@ -401,11 +465,7 @@ nav a:hover
 
   /*Catalogo*/
 
-  .frontsecu
-  {
-    height: 32rem;
-  }
-
+  
   .catalogo-box 
   {
      padding: 0 5rem;
@@ -414,14 +474,19 @@ nav a:hover
   /*Nosotros*/
 
   .texto-nosotros {
-  max-width: 542px;
+  max-width: 500px;
   margin: 20px auto;
   line-height: 1.8;
   color: rgba(0, 0, 0, 0.7);
   } 
   .nosotros
   {
-    height: 47rem;
+    margin-top: 106px;
+  }
+
+  #nosotross
+  {
+    padding-bottom: 22px;
   }
 
   /*Contactos*/
@@ -430,57 +495,136 @@ nav a:hover
   
   {
     width: 100%;
-    height: 82px;
+    height: 34px;
     background-color: #ffffff;
   }
   
+ .containercontactos
+  {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+  }
 
   .contacto
   {
-    display: grid;
-    justify-content: center;
-    justify-items: center;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     width: 100%;
   }
 
   .containercont
   {
-    justify-content: center;
+    width: 100%;
+  }
+
+  .contacto h2
+  {
+    font-size: 55px;
+  }
+
+  .logo-contacto
+  {
+    width: 252px;
+    height: 211px;
+  }
+
+
+  .contacto ul 
+  {
+    
     align-items: center;
-    text-align: center;
+    width: 301px;
 
   }
 
+  .contacto ul li 
+  {
+    text-align: center;
+    width: 258px;
+
+  }
+ 
 }
 
 
 @media (max-width: 596px)
 {
+
     .frontsecu
     {
-      height: 36rem;
+      justify-content: flex-end;
     }
 
-    #nosotross
+    #nosotross 
     {
-      height: 123px;
-    }
-    
-    .nosotros
-    {
-      height: 59rem;
+      padding-bottom: 45px;
     }
 }
     
 @media (max-width: 382px) {
 
+   .front-content
+   {
+     gap: 0px;
+     padding-top: 62px;
 
-  .frontsecu
-  {
-    height: 52rem;
-  }
 
-  #nosotros
-  {
-    height: 74rem;
-  }
+   }
+
+    #productoss
+    {
+      height: 56px;
+    }
+
+   .titulo h2
+   {
+     font-size: 37px;
+   }
+
+   .titulo p 
+   {
+     font-size: 14px;
+   }
+
+
+
+
+
+
+
+
+   .frontsecu
+   {
+    justify-content: flex-end;
+    padding-top: 97px;
+    margin-top: 16px;
+    height: 107vh;
+   
+   }
+
+   #nosotross {
+    height: 68px;
+   }
+
+   .nosotros h2 
+   {
+     padding-top: 140px;
+   }
+
+
+   /*Contactos*/
+
+   .listacontactos p 
+   {
+     width: 230px;
+   }
+
+   
+   
+
 }
