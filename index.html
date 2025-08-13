@@ -4,7 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>El Cántaro Limpieza | Pagina oficial</title>
-  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/style.css"/>
+
+  <!--Animaciones-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   
    <!--Fuentes-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,9 +31,9 @@
 
   <!-- front -->
   <section class="front" id="front">
-    <div class="container front-content">
-       <div class="titulo">
-        <h1>Somos <strong>El Cántaro</strong><br>
+    <div class="container front-content" data-aos="zoom-in" >
+       <div class="titulo" >
+        <h1 >Somos <strong>El Cántaro</strong><br>
         <strong>Limpieza</strong>
         </h1>
         <p>Te ofrecemos trapos y paños seleccionados para uso profesional: resistentes, absorbentes y listos para el trabajo exigente de talleres, industrias y comercios.
@@ -43,16 +46,20 @@
     </div>  
   </section>
 
-  <div id="productoss"></div>
+ 
   <!-- Catálogo -->
- <section class="frontsecu">
-  <h2>Conoce nuestros <br>productos</h2>
+ <section class="frontsecu" id="productoss">
+  <h2 data-aos="zoom-in">Conoce nuestros <br>productos</h2>
 
-  <div class="catalogo-box">
-    <h3>Catálogo</h3> 
+  <div class="catalogo-box" >
+    <a href="./assets/Catalogo.pdf" download="Catalogo-El-Cantaro">
+      <button>
+        <h3 data-aos="fade-right">Descargar Catalogo</h3>
+      </button>
+    </a> 
   </div>
 
-  <div class="productos-imgs">
+  <div class="productos-imgs" data-aos="zoom-in">
     <div class="producto">
       <img src="assets/trapo1.png" alt="Producto 1">
     </div>
@@ -64,16 +71,16 @@
     </div>
   </div>
 
-  <p class="industria">100% Industria Argentina</p>
+  <p class="industria" data-aos="zoom-in">100% Industria Argentina</p>
 </section>
 
   
   <!-- Nosotros -->
-  <div id="nosotross"></div> 
-  <section class="nosotros" id="nosotros">
-    <div class="container">
-      <h2>Sobre Nosotros</h2>
-      <p class="texto-nosotros">
+
+  <section class="nosotros" id="nosotross">
+    <div class="container" >
+      <h2 data-aos="zoom-in">Sobre Nosotros</h2>
+      <p class="texto-nosotros" data-aos="zoom-in">
         En 2005, José Martín Vitale decidió emprender un proyecto propio con una idea simple pero potente: ofrecer productos de limpieza de calidad, especializados en trapos y paños industriales, un insumo esencial para talleres, fábricas y comercios.
         <br><br>
         Comenzó de manera familiar, con producción artesanal y distribución local, enfocándose en garantizar resistencia, absorción y durabilidad en cada trapo. La marca El Cántaro Limpieza nació con el compromiso de simplificar las tareas de limpieza profesional.
@@ -82,7 +89,7 @@
         <br><br>
         Hoy, Elcántaro Limpieza se reconoce por su especialización en trapos y paños, convirtiéndose en un aliado confiable para industrias y comercios que buscan eficiencia y practicidad en sus tareas de limpieza..  
       </p>
-      <img src="./assets/logoriginal.png" alt="EC Mini" class="ec-mini">
+      <img src="./assets/logoriginal.png" alt="EC Mini" class="ec-mini" data-aos="zoom-in-up">
     </div>
   </section>
 
@@ -99,15 +106,15 @@
   </section>-->
   
   
-  <div id="contactoss"></div> 
-<section class="containercontactos">
+
+<section class="containercontactos" id="contactoss">
   <div class="contacto">
-     <img src="./assets/logoriginal.png" alt="Logo EC" class="logo-contacto">
-     <div class="containercont">
-     <h2>Contáctanos</h2>
-     <div class="listacontactos">
-      <p>📧 pablito93@gmail.com</p>
-      <p>📞 +54 11 3362-5460</p>
+     <img src="./assets/logoriginal.png" alt="Logo EC" class="logo-contacto"  data-aos-duration="1000" data-aos="zoom-out">
+     <div class="containercont" >
+     <h2 data-aos="zoom-out" >Contáctanos</h2>
+     <div class="listacontactos" data-aos="fade-up" >
+      <p >ventas@elcantarolimpieza.com </p>
+      <p>+54 11 3362-5460 </p>
      </div>
         
   </div> 
@@ -132,11 +139,18 @@
         </ul>
 
         <div class="footer-credit">
-            Creado por Thomas Aguirre, Matias Rinaldi y Thiago Romeo
+            Creado por 
+            <a href="https://ventum.myportfolio.com/" target="_blank">Thomas Aguirre</a>,
+            <a href="https://github.com/MatiasR04" target="_blank">Matias Rinaldi</a> y
+            <a href="https://linkedin.com/in/thiago-romeo-345770367" target="_blank">Thiago Romeo</a>
         </div>
     </div>
 </footer>
 
 
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>

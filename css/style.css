@@ -1,14 +1,25 @@
 /* Fuente principal */
 
-#productoss
+
+
+#nosotross,
+#contactoss {
+  scroll-margin-top: 70px; /* Ajusta según la altura real de tu header */
+}
+
+#productos 
 {
-  padding-top: 100px;
-  margin-top: -100px;
+  scroll-margin-top: 1px;
 }
 
 html
 {
   scroll-behavior: smooth;
+}
+
+a
+{
+  text-decoration: none;
 }
 
 body {
@@ -38,6 +49,7 @@ h1, h2 {
   border-bottom: 1px solid #ddd;
   position: fixed;
   width: 100%;
+  z-index: 1000;
 }
 
 .header-content {
@@ -76,7 +88,7 @@ nav a:hover
 /* front */
 .front {
   height: 100vh;
-  padding: 60px 0 0 0;
+  padding: 100px 0 0 0;
   display: flex;
   text-align: center;
 }
@@ -85,6 +97,7 @@ nav a:hover
 
 .front-content {
   width: 100%;
+  padding-bottom: 84px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -95,16 +108,16 @@ nav a:hover
   margin-bottom: 20px;
   text-align: start;
   font-weight: 350;
-  font-size: 60px;
+  font-size: 53px;
 }
 
 .front p
 {
-  width: 80%;
-  min-width: 100%;
+  width: 60%;
+  min-width: 76%;
   text-align: start;
-  line-height: 1.5rem;
-  font-size: 17px;
+  line-height: 28px;
+  font-size: 14px;
 }
 
 .front-logo {
@@ -115,7 +128,7 @@ nav a:hover
 
 .titulo
 {
-  width: 59%;
+  width: 87%;
 }
 
 
@@ -148,7 +161,6 @@ nav a:hover
 .catalogo-box {
   background-color: #000;
   color: #fff;
-  padding: 0 210px;
   font-weight: bold;
   margin-bottom: 42px;
   height: 71px;
@@ -157,9 +169,31 @@ nav a:hover
   align-items: center;
 }
 
+.catalogo-box button
+{
+  background-color: #000;
+  height: 75px;
+  width: 551px;
+  border: solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.catalogo-box button:hover 
+{
+  background-color: #242424;
+  color: #b2adad;
+  width: 580px;
+  height: 85px;
+  transition: 0.2s ease;
+}
+
 .catalogo-box h3 {
   font-family: 'montserrat', sans-serif;
   font-size: 35px;
+  color: #fff;
 }
 
 .productos-imgs {
@@ -195,12 +229,6 @@ nav a:hover
 
 /* Nosotros */
 
-#nosotross
-{
-  width: 100%;
-  height: 12px;
-  background-color: #F3F3F3;
-}
 
 
 .nosotros {
@@ -208,13 +236,16 @@ nav a:hover
   height: 100vh;
   display: flex;
   align-items: center;
+  margin-top: -23px;
 }
+
 
 .nosotros h2
 {
    font-size: 44px;
    font-weight: 420;
    margin: 0;
+  
 }
 
 .texto-nosotros {
@@ -226,6 +257,7 @@ nav a:hover
 
 .ec-mini {
   height: 40px;
+
   margin-top: 20px;
 }
 
@@ -388,6 +420,19 @@ nav a:hover
     color: #bbb;
 }
 
+.footer-credit a 
+{
+  text-decoration: none;
+  color: #bbb;
+}
+
+.footer-credit a:hover 
+{
+  color: #ffffff;
+  transition: 0.3s ease;
+}
+
+
 /* Responsive */
 @media (max-width: 768px) {
     
@@ -463,13 +508,6 @@ nav a:hover
     height: 100px;
   }
 
-  /*Catalogo*/
-
-  
-  .catalogo-box 
-  {
-     padding: 0 5rem;
-  }
   
   /*Nosotros*/
 
@@ -486,18 +524,12 @@ nav a:hover
 
   #nosotross
   {
-    padding-bottom: 22px;
+    scroll-margin-top: 110px;
   }
 
   /*Contactos*/
 
-  #contactoss
-  
-  {
-    width: 100%;
-    height: 34px;
-    background-color: #ffffff;
-  }
+ 
   
  .containercontactos
   {
@@ -560,26 +592,65 @@ nav a:hover
       justify-content: flex-end;
     }
 
-    #nosotross 
-    {
-      padding-bottom: 45px;
+
+    /*NOSOTROS*/
+
+    .nosotros{
+
+      margin-top: 20px;
+
     }
+
+
+    .texto-nosotros
+    {
+      margin: 19px auto;
+      max-width: 340px;
+      font-size: 14px;
+    }
+
+    .ec-mini 
+    {
+      height: 40px;
+      margin-top: 5px;
+    }
+
+
+    #nosotross
+    {
+      scroll-margin-top: 100px;
+    }
+
+    /*Catalogo*/
+    
+    .catalogo-box button 
+    {
+      width: 290px;
+    }
+    .catalogo-box h3 
+    {
+      font-size: 25px;
+    }
+
+
+
+    /*CONTACTO*/
+    .logo-contacto
+    {
+      width: 210px;
+      height: 163px;
+    }
+
+    
 }
     
-@media (max-width: 382px) {
+@media (max-width: 400px) {
 
    .front-content
    {
      gap: 0px;
      padding-top: 62px;
-
-
    }
-
-    #productoss
-    {
-      height: 56px;
-    }
 
    .titulo h2
    {
@@ -591,29 +662,50 @@ nav a:hover
      font-size: 14px;
    }
 
+  
 
 
+/*Catalogo*/
 
-
-
-
+   #productoss
+   {
+    scroll-margin-top: 120px;
+   }
 
    .frontsecu
    {
     justify-content: flex-end;
-    padding-top: 97px;
-    margin-top: 16px;
-    height: 107vh;
-   
+    padding-top: 80px;
    }
 
-   #nosotross {
-    height: 68px;
+   .producto
+   {
+     width: 115px;
+     height: 108px;
    }
+   
+    .productos-imgs 
+   {
+     width: 166px;
+   }
+
+   .industria 
+   {
+     font-size: 24px;
+   }
+
+
+   .catalogo-box h3 
+   {
+    font-size: 20px;
+   }
+   
+
+   /*Nosotros*/
 
    .nosotros h2 
    {
-     padding-top: 140px;
+     padding-top: 180px;
    }
 
 
@@ -624,7 +716,9 @@ nav a:hover
      width: 230px;
    }
 
-   
-   
+   .containercontactos
+   {
+     margin-top: 138px;
+   }
 
 }
