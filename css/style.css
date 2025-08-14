@@ -367,6 +367,24 @@ nav a:hover
   padding: 16px;
   background-color: #000;
   width: 291px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 16px;
+}
+
+.imgcontactos
+{
+  width: 20px;
+  height: 20px;
+}
+
+.imgcontactos:hover
+{
+  width: 25px;
+  height: 25px;
+  transition: 0.5s ease;
 }
 
 /* Footer */
@@ -663,8 +681,6 @@ nav a:hover
    }
 
   
-
-
 /*Catalogo*/
 
    #productoss
@@ -713,7 +729,9 @@ nav a:hover
 
    .listacontactos p 
    {
-     width: 230px;
+     width: 270px;
+     gap: 8px;
+     font-size: 14px;
    }
 
    .containercontactos
