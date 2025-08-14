@@ -185,7 +185,7 @@ nav a:hover
 {
   background-color: #242424;
   color: #b2adad;
-  width: 580px;
+  
   height: 85px;
   transition: 0.2s ease;
 }
@@ -261,24 +261,6 @@ nav a:hover
   margin-top: 20px;
 }
 
-/* Clientes */
-.clientes {
-  background: #f3f3f3;
-  padding: 60px 0;
-  text-align: center;
-}
-
-.logos-clientes {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 40px;
-  margin-top: 30px;
-}
-
-.logos-clientes img {
-  height: 100px;
-}
 
 /* Contacto */
 
@@ -607,7 +589,13 @@ nav a:hover
 
     .frontsecu
     {
-      justify-content: flex-end;
+      justify-content: flex-start;
+      height: 94vh;
+    }
+
+    .frontsecu h2 
+    {
+      padding-top: 15px;
     }
 
 
@@ -645,6 +633,7 @@ nav a:hover
     {
       width: 290px;
     }
+
     .catalogo-box h3 
     {
       font-size: 25px;
