@@ -343,6 +343,15 @@ nav a:hover
   flex-direction: column;
 }
 
+.contac_container_texto
+{
+   display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+
 .listacontactos p
 {
   color: #fff;
@@ -460,7 +469,7 @@ nav a:hover
 
   .front
   {
-    padding: 40px 0 50px 0;
+    padding: 0px 0 50px 0;
     align-items: center;
   }
 
@@ -569,6 +578,7 @@ nav a:hover
     align-items: center;
     justify-content: flex-end;
     flex-direction: column;
+    margin-top: 70px;
   }
 
   .contacto
