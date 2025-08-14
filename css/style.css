@@ -451,15 +451,16 @@ nav a:hover
 
   /*Front principal*/
 
-  
+ 
 
   .front h1 {
     font-size: 2rem;
+
   }
 
   .front
   {
-    padding: 34px 0 0 0;
+    padding: 40px 0 50px 0;
     align-items: center;
   }
 
@@ -485,6 +486,7 @@ nav a:hover
   {
     text-align: center;
     font-size: 42px;
+    padding-top: 100px;
   }
 
   .titulo p
@@ -508,6 +510,28 @@ nav a:hover
     height: 100px;
   }
 
+  /*Productos*/
+   #productoss
+  {
+    scroll-margin-top: 120px;
+  }
+
+    .productos-imgs {
+    flex-direction: column;
+    align-items: center; /* Centra las imágenes */
+    gap: 20px; /* Menos espacio vertical */
+  }
+
+  .producto {
+    width: 120px;
+    height: 120px;
+  }
+
+  .frontsecu {
+    padding: 40px 0; /* Reduce el espacio vertical */
+    height: auto; /* Que se adapte al contenido */
+  }
+
   
   /*Nosotros*/
 
@@ -519,12 +543,19 @@ nav a:hover
   } 
   .nosotros
   {
-    margin-top: 106px;
+    padding: 20px 0px 30px 0px;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .nosotros h2 
+  {
+    padding-top: 50px;
   }
 
   #nosotross
   {
-    scroll-margin-top: 110px;
+    scroll-margin-top: 105px;
   }
 
   /*Contactos*/
@@ -593,10 +624,7 @@ nav a:hover
       height: 94vh;
     }
 
-    .frontsecu h2 
-    {
-      padding-top: 15px;
-    }
+   
 
 
     /*NOSOTROS*/
@@ -659,10 +687,14 @@ nav a:hover
      padding-top: 62px;
    }
 
-   .titulo h2
+   .logoprinc img 
    {
-     font-size: 37px;
+     min-width: 92px;
+     width: 108px;
+     height: 77px;
    }
+
+  
 
    .titulo p 
    {
@@ -670,17 +702,17 @@ nav a:hover
    }
 
   
-/*Catalogo*/
+/*Productos*/
 
    #productoss
    {
-    scroll-margin-top: 120px;
+    scroll-margin-top: 100px;
    }
 
    .frontsecu
    {
-    justify-content: flex-end;
     padding-top: 80px;
+    padding-bottom: 100px;
    }
 
    .producto
@@ -708,10 +740,6 @@ nav a:hover
 
    /*Nosotros*/
 
-   .nosotros h2 
-   {
-     padding-top: 180px;
-   }
 
 
    /*Contactos*/
