@@ -1,15 +1,8 @@
 /* Fuente principal */
 
-
-
 #nosotross,
 #contactoss {
   scroll-margin-top: 70px; /* Ajusta según la altura real de tu header */
-}
-
-#productos 
-{
-  scroll-margin-top: 1px;
 }
 
 html
@@ -93,8 +86,6 @@ nav a:hover
   text-align: center;
 }
 
-
-
 .front-content {
   width: 100%;
   padding-bottom: 84px;
@@ -131,19 +122,13 @@ nav a:hover
   width: 87%;
 }
 
-
 /* Catálogo */
-
-
-
-/*LO DE MATI*/
 
 .frontsecu
 {
     background-color: #F3F3F3;
     width: 100%;
     height: 100vh;
-    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -185,7 +170,6 @@ nav a:hover
 {
   background-color: #242424;
   color: #b2adad;
-  
   height: 85px;
   transition: 0.2s ease;
 }
@@ -229,8 +213,6 @@ nav a:hover
 
 /* Nosotros */
 
-
-
 .nosotros {
   text-align: center;
   height: 100vh;
@@ -238,7 +220,6 @@ nav a:hover
   align-items: center;
   margin-top: -23px;
 }
-
 
 .nosotros h2
 {
@@ -257,10 +238,8 @@ nav a:hover
 
 .ec-mini {
   height: 40px;
-
   margin-top: 20px;
 }
-
 
 /* Contacto */
 
@@ -288,7 +267,6 @@ nav a:hover
   justify-content: flex-start;
   align-items: center;
 }
-
 
 .logo-contacto {
   height: 229px;
@@ -332,9 +310,7 @@ nav a:hover
   text-align: center;
   margin: 0;
   padding:  0 0 50px 0;
-  
 }
-
 
 /*otra forma contacto*/
 .listacontactos
@@ -452,7 +428,6 @@ nav a:hover
     gap: 16px;
   }
 
- 
   .logos-clientes {
     flex-direction: column;
     align-items: center;
@@ -460,11 +435,8 @@ nav a:hover
 
   /*Front principal*/
 
- 
-
   .front h1 {
     font-size: 2rem;
-
   }
 
   .front
@@ -541,7 +513,6 @@ nav a:hover
     height: auto; /* Que se adapte al contenido */
   }
 
-  
   /*Nosotros*/
 
   .texto-nosotros {
@@ -550,6 +521,7 @@ nav a:hover
   line-height: 1.8;
   color: rgba(0, 0, 0, 0.7);
   } 
+
   .nosotros
   {
     padding: 20px 0px 30px 0px;
@@ -569,8 +541,6 @@ nav a:hover
 
   /*Contactos*/
 
- 
-  
  .containercontactos
   {
     height: 100vh;
@@ -606,7 +576,6 @@ nav a:hover
     height: 211px;
   }
 
-
   .contacto ul 
   {
     
@@ -614,57 +583,23 @@ nav a:hover
     width: 301px;
 
   }
-
   .contacto ul li 
   {
     text-align: center;
     width: 258px;
 
   }
- 
 }
 
 
 @media (max-width: 596px)
 {
-
     .frontsecu
     {
       justify-content: flex-start;
       height: 94vh;
     }
-
-   
-
-
-    /*NOSOTROS*/
-
-    .nosotros{
-
-      margin-top: 20px;
-
-    }
-
-
-    .texto-nosotros
-    {
-      margin: 19px auto;
-      max-width: 340px;
-      font-size: 14px;
-    }
-
-    .ec-mini 
-    {
-      height: 40px;
-      margin-top: 5px;
-    }
-
-
-    #nosotross
-    {
-      scroll-margin-top: 100px;
-    }
-
+    
     /*Catalogo*/
     
     .catalogo-box button 
@@ -679,6 +614,32 @@ nav a:hover
 
 
 
+    /*NOSOTROS*/
+
+    .nosotros{
+
+      margin-top: 20px;
+
+    }
+
+    .texto-nosotros
+    {
+      margin: 19px auto;
+      max-width: 340px;
+      font-size: 14px;
+    }
+
+    .ec-mini 
+    {
+      height: 40px;
+      margin-top: 5px;
+    }
+
+    #nosotross
+    {
+      scroll-margin-top: 100px;
+    }
+
     /*CONTACTO*/
     .logo-contacto
     {
@@ -686,7 +647,6 @@ nav a:hover
       height: 163px;
     }
 
-    
 }
     
 @media (max-width: 400px) {
@@ -704,14 +664,11 @@ nav a:hover
      height: 77px;
    }
 
-  
-
    .titulo p 
    {
      font-size: 14px;
    }
 
-  
 /*Productos*/
 
    #productoss
@@ -747,11 +704,6 @@ nav a:hover
     font-size: 20px;
    }
    
-
-   /*Nosotros*/
-
-
-
    /*Contactos*/
 
    .listacontactos p 
